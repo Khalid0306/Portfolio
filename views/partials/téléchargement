@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- REMIXICON -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" rel="stylesheet" crossorigin="">
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
+    <%- include('partials/head') %>
+</head>
+<body>
+     <!--==================== MAIN ====================-->
+     <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <style>
+                .home {
+                    background-image: url('/images/567599_Lakhdar_Khellaoui_Algerie.jpg');
+                    background-size: cover; 
+                    background-position: center; 
+                }
+            
+                .home::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            </style>
+           <div class="home__container container grid">
+            <h1 class="home__name">
+                Khalid Oumarou Garba
+            </h1>
+            <div class="home__perfil">
+                <div class="home__image">
+                    <img src="/images/Cv khalid photo.jpg" alt="image" class="home__img">
+                    <div class="home__shadow">
+
+                    </div>
+                    <img src="/images/curved-arrow.svg" alt="image" class="home__arrow">
+                    <!-- <img src="/images/random-lines.svg" alt="image" class="home__line"> -->
+                    <div class="geometric-box"></div>          
+                </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/khalid-oumarou-garba/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="https://github.com/Khalid0306" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@lightnovelworld" target="_blank" class="home__social-link">
+                        <i class="ri-tiktok-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="home__info">
+                <p class="home__description">
+                    <b>Developpeur Web 👨‍💻</b> Passionné d'informatique, de développement Web, 
+                    des data jusqu'au développement logiciel... et plus encore 🚀!
+                </p>
+                <a href="#about" class="home__scroll">
+                    <div class="home__scroll-box">
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <span class="home__scroll-text">En bas</span>
+                </a>
+            </div>
+           </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+           <div class="about__container container grid">
+            <h2 class="section__title-1 h2">
+                À propos de moi.
+            </h2>
+            <div class="about__perfil">
+                <div class="about__image">
+                  <img src="/images/Cv khalid photo.jpg" alt="image" class="about__img">
+                  <div class="about__shadow">
+
+                  </div> 
+                  <div class="geometric-box"></div>
+                  <img src="/images/random-lines.svg" alt="" class="about__line">
+                  <div class="about__box"></div>
+                </div>
+            </div>
+            <div class="about__info">
+                <p class="about__description">
+                    <b></b>
+                    👨‍🎓 Je suis en <b> 2ème année </b> dans <b> le cycle Bachelor </b> à @ECE Engineering school.
+                    <br>
+                    <br>
+                    💻 je poursuis <b>un Bachelor concepteur et developpeur d'application</b>.
+                    <br>
+                    <br>
+                    💼 Je recherche <b>une alternance de 1 à 2 ans </b> à partir de <b>septembre 2023</b>.
+                    <br>
+                    <br>
+                    💬 Si vous pensez que mon profil vous convient,<b> n'hésitez pas à me contacter </b>😊 !
+                </p>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <b>Compétences technique:</b> NodeJs, Express.JS, C, Symfony. 
+                    </li>
+                    <li class="about__item">
+                        <b>Logiciels:</b> Docker, Postman.
+                    </li>
+                    <li class="about__item">
+                        <b>Architectures:</b> MVC, REST.
+                    </li>
+                    <li class="about__item">
+                        <b>Base de données:</b> PhpMyadmin, MongoDB, MCD/MLD.
+                    </li>
+                </ul>
+                <div class="about__game">
+                    <h3 class="section__title-2">Quelques anecdotes pour mieux me connaître...</h3>
+                    <label for="numberInput" class="custom-label">Choisissez un nombre entre 1 et 10 :</label>
+                    <input type="number" id="numberInput" min="1" max="10">
+                    <button onclick="displayAnecdote()">Afficher Anecdote</button>
+                    <p id="anecdoteText" class="custom-label"></p>
+                 </div>
+                <div class="about__buttons">
+                    <a href="/files/Khalid Professional Web Developer Resume.pdf" download="Khalid Professional Web Developer Resume.pdf" class="button">
+                        <i class="ri-file-download-line"></i> Cv
+                    </a>
+                    <a href="#contact" class="button">
+                        <i class="ri-send-plane-line"></i> Contactez Moi
+                    </a>
+                    <a href="https://www.linkedin.com/in/khalid-oumarou-garba/" class="button__ghost" target="_blank">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                </div>
+            </div>
+           </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+           <h2 class="section__title-1 h2">
+            <span>Projets.</span>
+           </h2>
+           <div class="projects__container container grid">
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="/images/phototheque.jpg" alt="image" class="project__img">
+                    <a href="" class="projects__button button" id="projects__button1">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">
+                        Website
+                    </h3>
+                    <h2 class="projects__title">
+                        Photothèque
+                    </h2>
+                    <p class="projects__description">
+                       <b>Description</b>:
+                        Projet solo mettant en œuvre une photothèque utilisant les technologies Express, EJS, Mongoose et suivant l'architecture MVC.
+                        <div id="experience" class="hidden">
+                        <p><strong>Points Forts :</strong></p>
+                          <li><strong>Modularité :</strong> Application web robuste grâce à Express.</li>
+                          <li><strong>Dynamisme :</strong> Utilisation d'EJS pour générer du contenu HTML côté serveur.</li>
+                          <li><strong>Gestion de Données :</strong> Mongoose assure une interaction fluide avec MongoDB.</li>
+                          <li><strong>Structure Claire :</strong> Application réussie de l'architecture MVC.</li>
+                        </div>
+                        <div id="voirPlusBtn">Voir plus</div>
+                    </p>
+                </div>
+                <div class="projects__buttons">
+                    <a href="https://github.com/Khalid0306/Phototheque" target="_blank" class="projects__links">
+                        <i class="ri-github-line"></i>Voir
+                    </a>
+                </div>
+                <div class="pop-up" id="pop-up">
+                    <span class="span1">x</span>
+                    <div class="pop-up-text">
+                      <h1>Photothèque</h1>
+                      <img src="https://images.unsplash.com/photo-1474244707578-17999c7d3fc4"/>
+                      <section>
+                        <h2>Photothèque (Express, EJS, Mongoose, MVC)</h2>
+                    
+                        <p><strong>Description :</strong> Projet solo d'une photothèque développée avec Express, EJS, et Mongoose, suivant l'architecture MVC.</p>
+                    
+                        <p><strong>Technologies :</strong></p>
+                        <ul>
+                          <li><strong>Framework :</strong> Express</li>
+                          <li><strong>Moteur de Template :</strong> EJS</li>
+                          <li><strong>Base de Données :</strong> Mongoose (MongoDB)</li>
+                          <li><strong>Architecture :</strong> MVC</li>
+                        </ul>
+                      </section>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pop-up-container" id="">
+                  </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="/images/todolist.jpg" alt="image" class="project__img">
+                    <a href="#" class="projects__button button projects__button1">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">
+                        Website
+                    </h3>
+                    <h2 class="projects__title">
+                        To-do-List
+                    </h2>
+                    <p class="projects__description">
+                        <b>Description</b>:
+                        Projet solo développant une application Todolist utilisant les technologies Express, EJS, Mongoose et suivant l'architecture MVC.
+
+                        <div id="experience1" class="hidden">
+                            <p><strong>Expérience acquise :</strong></p>
+                            <ul>
+                              <li>Développement complet d'une application web en solo.</li>
+                              <li>Utilisation avancée d'Express et EJS.</li>
+                              <li>Implémentation réussie de l'architecture MVC.</li>
+                              <li>Gestion efficace des opérations CRUD avec Mongoose.</li>
+                            </ul>
+                          </div>
+                          <div id="voirPlusBtn1">Voir plus</div>
+                    </p>
+                </div>
+                <div class="projects__buttons">
+                    <a href="https://github.com/Khalid0306/Todolist" target="_blank" class="projects__links">
+                        <i class="ri-github-line"></i>Voir
+                    </a>
+                </div>
+                <div class="pop-up" id="pop-up">
+                    <span class="span1">x</span>
+                    <div class="pop-up-text">
+                      <h1>Heading 1</h1>
+                      <p>Some sample pop-up text.</p>
+                      <img src="https://images.unsplash.com/photo-1474244707578-17999c7d3fc4"/>
+                      <section>
+                        <h2>Todolist (Express, EJS, Mongoose, MVC)</h2>
+                    
+                        <p><strong>Description :</strong> Projet solo développant une application Todolist utilisant Express, EJS, Mongoose, et suivant l'architecture MVC.</p>
+                    
+                        <ul>
+                          <li><strong>Framework JavaScript :</strong> Express</li>
+                          <li><strong>Moteur de Template :</strong> EJS</li>
+                          <li><strong>Base de Données :</strong> Mongoose (MongoDB)</li>
+                          <li><strong>Architecture :</strong> MVC</li>
+                        </ul>
+                               
+                      </section>
+                    </div>
+                  </div>
+                  <div class="pop-up-container" id="">
+                  </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="/images/carnet-dadresses_1.jpg" alt="image" class="project__img">
+                    <a href="#" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">
+                        API
+                    </h3>
+                    <h2 class="projects__title">
+                        Carnet d'adresse
+                    </h2>
+                    <p class="projects__description">
+                        <p><strong>Description :</strong> Projet solo implémentant un Carnet d’adresse en utilisant Node.js, Express.js, Mongoose, Postman, et suivant l'architecture REST.</p>
+                        <div id="experience2" class="hidden">
+                        <p><strong>Expérience acquise :</strong></p>
+                        <li>Développement individuel d'une API REST fonctionnelle.</li>
+                        <li>Maîtrise d'Express pour la création d'endpoints REST.</li>
+                        <li>Utilisation de Mongoose pour interagir avec une base de données.</li>
+                        <li>Test approfondi de l'API avec Postman pour garantir la fiabilité.</li>
+                    </div>
+                        <div id="voirPlusBtn2">Voir plus</div>
+                    </p>
+                </div>
+                <div class="projects__buttons">
+                    <a href="https://github.com/Khalid0306/API-REST" target="_blank" class="projects__links">
+                        <i class="ri-github-line"></i>Voir
+                    </a>
+                </div>
+                <div class="pop-up" id="pop-up">
+                    <span class="span1">x</span>
+                    <div class="pop-up-text">
+                      <h1>Carnet d’adresse (API REST) </h1>
+                      <img src="https://images.unsplash.com/photo-1474244707578-17999c7d3fc4"/>
+                      <section>
+                        <h2></h2>
+                    
+                        <p><strong>Description :</strong> Projet solo implémentant un Carnet d’adresse en utilisant Node.js, Express.js, Mongoose, Postman, et suivant l'architecture REST.</p>
+                    
+                        <ul>
+                          <li><strong>Framework JavaScript :</strong> Express</li>
+                          <li><strong>Base de Données :</strong> Mongoose</li>
+                          <li><strong>Test et Débogage :</strong> Postman</li>
+                          <li><strong>Architecture :</strong> REST</li>
+                        </ul>
+                    
+                        <p><strong>Caractéristiques :</strong></p>
+                        <ul>
+                          <li>Utilisation d'Express pour le développement du serveur API.</li>
+                          <li>Gestion efficace des données avec Mongoose.</li>
+                          <li>Application réussie de l'architecture REST pour une API robuste.</li>
+                          <li>Test et débogage approfondis de l'API avec Postman.</li>
+                        </ul>
+                    
+                        <p><strong>Technologies utilisées :</strong> Node.js, Express.js, Mongoose, Postman, REST.</p>
+                      </section>
+                    </div>
+                  </div>
+                  <div class="pop-up-container" id="">
+                  </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="/images/dungeon.jpg" alt="image" class="project__img">
+                    <a href="#" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">
+                        Website
+                    </h3>
+                    <h2 class="projects__title">
+                        Dungeon & Dragon
+                    </h2>
+                    <p class="projects__description">
+                        <p><strong>Description :</strong> Projet solo académique de développement d'un jeu de type Dungeon & Dragon en utilisant PHP, JavaScript, HTML, et CSS.</p>
+                        <div id="experience3" class="hidden">
+                        <p><strong>Expérience acquise :</strong></p>
+                          <li>Réalisation individuelle d'un projet académique complexe.</li>
+                          <li>Application des principes de développement web pour créer une interface utilisateur attrayante.</li>
+                          <li>Utilisation de PHP pour la programmation côté serveur.</li>
+                          <li>Intégration réussie de la logique du jeu et de la gestion des données.</li>
+                           </div>
+                          <div id="voirPlusBtn3">Voir plus</div>
+                    </p>
+                </div>
+                <div class="projects__buttons">
+                    <a href="https://github.com/Khalid0306/Dungeon-dragon" target="_blank" class="projects__links">
+                        <i class="ri-github-line"></i>Voir
+                    </a>
+                </div>
+                <div class="pop-up" id="pop-up">
+                    <span class="span1">x</span>
+                    <div class="pop-up-text">
+                      <h1>Programmation de jeu type dungeon&dragon 1</h1>
+                      <img src="https://images.unsplash.com/photo-1474244707578-17999c7d3fc4"/>
+                      <section>
+                        <ul>
+                          <li><strong>Développement web :</strong> HTML, CSS</li>
+                          <li><strong>Programmation côté serveur :</strong> PHP</li>
+                          <li><strong>Programmation côté client :</strong> JavaScript</li>
+                          <li><strong>Gestion de base de données :</strong> (Ajoutez ici la technologie de base de données utilisée)</li>
+                        </ul>
+                    
+                        <p><strong>Caractéristiques :</strong></p>
+                        <ul>
+                          <li>Développement web complet avec HTML et CSS pour une interface utilisateur immersive.</li>
+                          <li>Implémentation de la logique du jeu côté serveur avec PHP.</li>
+                          <li>Intégration de fonctionnalités dynamiques et interactives côté client avec JavaScript.</li>
+                          <li>Gestion de la persistance des données avec une base de données (ajoutez ici la technologie de base de données).</li>
+                        </ul>
+                    
+                        <p><strong>Technologies utilisées :</strong> PHP, JavaScript, HTML, CSS, (ajoutez ici la technologie de base de données).</p>
+                      </section>
+                    </div>
+                  </div>
+                  <div class="pop-up-container" id="">
+                  </div>
+            </article>
+           </div>
+        </section>
+
+        <!-- ==================== Experiences ==================== -->
+        <section class="projects section" id="experiences">
+            <h2 class="section__title-1 h2">
+                <span>Experiences.</span>
+               </h2>
+               <div class="projects__container container grid">
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="/images/Comment-developper-efficacement-son-activite.jpg" alt="image" class="project__img">
+                        <!-- <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a> -->
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">
+                            Stage
+                        </h3>
+                        <h2 class="projects__title">
+                            Stagiaire développeur Web 
+                        </h2>
+                        <p class="projects__description">
+                            <section>
+                                <h2>Overconsulting | Paris, France</h2>
+                                <p><strong>Stagiaire développeur web | Juin 2023 – Août 2023</strong></p>
+                            
+                                <p>Pendant mon stage chez Overconsulting, j'ai eu l'occasion d'approfondir mes compétences dans l'utilisation de Docker et de l'environnement Symfony. Mon principal projet a été le développement d'un outil de facturation, où j'ai activement contribué au code de production.</p>
+                            
+                                <p><strong>Réalisations :</strong></p>
+                               
+                                  <li>Utilisation avancée de Docker pour la gestion d'environnements de développement.</li>
+                                  <li>Collaboration au développement d'un outil de facturation sous Symfony.</li>
+                                  <li>Travail concret sur du code de production en équipe.</li>
+                                
+                            
+                                <p><strong>Compétences acquises :</strong></p>
+                                
+                                  <li>Maîtrise de l'utilisation de Docker pour la gestion des conteneurs.</li>
+                                  <li>Expérience pratique dans le développement avec le framework Symfony.</li>
+                                  <li>Collaboration efficace au sein d'une équipe de développement professionnelle.</li>
+                               
+                              </section>
+                        </p>
+                    </div>
+                </article>
+    
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="/images/linkee.png" alt="image" class="project__img">
+                        <!-- <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a> -->
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">
+                            Bénevolat
+                        </h3>
+                        <h2 class="projects__title">
+                            Bénevole chez Linkee
+                        </h2>
+                        <p class="projects__description">
+                            <section>
+                                <h2>Association Linkee</h2>
+                                <p><strong>Bénévolat | Depuis 1 an</strong></p>
+                            
+                                <p>Au cours de ma dernière année d'engagement bénévole au sein de l'association Linkee, j'ai assumé la responsabilité spécifique de la livraison d'invendus d'un restaurant à une association. Cette mission était menée de manière autonome, démontrant ma capacité à prendre des initiatives et à contribuer de manière significative.</p>
+                            
+                                <p><strong>Contributions :</strong></p>
+                                
+                                  <li>Chargé de la collecte des invendus d'un restaurant et de leur livraison à une association locale.</li>
+                                  <li>Planification et organisation autonome des itinéraires de livraison.</li>
+                                  <li>Assurance de la sécurité et de l'intégrité des produits pendant le transport.</li>
+                                
+                            
+                                <p><strong>Expérience acquise :</strong></p>
+                               
+                                  <li>Développement de compétences en logistique et en organisation.</li>
+                                  <li>Autonomie dans la gestion des responsabilités liées à la livraison de denrées alimentaires.</li>
+                                  <li>Contribution positive à la réduction du gaspillage alimentaire et au soutien de la communauté locale.</li>
+                              </section>
+                        </p>
+                    </div>
+                </article>
+    
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="/images/soutien-scolaire.jpg" alt="image" class="project__img">
+                        <!-- <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a> -->
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">
+                            Bénevolat
+                        </h3>
+                        <h2 class="projects__title">
+                            Soutien scolaire
+                        </h2>
+                        <p class="projects__description">
+                            <section>
+                                <h2>Bénévolat en Soutien Scolaire</h2>
+                                <p><strong>Bénévolat | Depuis [Période de votre bénévolat]</strong></p>
+                            
+                                <p>Pendant la dernière année de mon engagement bénévole, j'ai consacré mon temps à aider des jeunes en difficulté avec leurs devoirs scolaires. J'ai travaillé de manière autonome, fournissant un soutien éducatif personnalisé pour aider les étudiants à surmonter leurs défis académiques.</p>
+                            
+                                <p><strong>Contributions :</strong></p>
+                                  <li>Assistance aux jeunes étudiants en difficulté avec divers sujets scolaires.</li>
+                                  <li>Identification des besoins spécifiques de chaque élève et adaptation de l'approche pédagogique en conséquence.</li>
+                                  <li>Encouragement de l'autonomie et du développement des compétences d'apprentissage chez les étudiants.</li>
+                            
+                                <p><strong>Expérience acquise :</strong></p>
+                                
+                                  <li>Développement de compétences pédagogiques et de communication efficace.</li>
+                                  <li>Autonomie dans la gestion des sessions de soutien scolaire.</li>
+                                  <li>Impact positif sur la progression académique des étudiants en difficulté.</li>
+
+                              </section>
+                        </p>
+                    </div>
+                </article>
+    
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="/images/dessin-anime-dessin-caissier_29937-8124.avif" alt="image" class="project__img">
+                        <!-- <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a> -->
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">
+                            Job d'été
+                        </h3>
+                        <h2 class="projects__title">
+                            Caissier
+                        </h2>
+                        <p class="projects__description">
+                            <section>
+                                <h2>La baguette dorée | Niamey, Niger</h2>
+                                <p><strong>Caissier | Juin 2017 – Août 2017</strong></p>
+                            
+                                <p>Pendant mon expérience en tant que caissier à La baguette dorée, mes responsabilités ont inclus :</p>
+                            
+                                  <li>Encaissement des paiements avec précision et professionnalisme.</li>
+                                  <li>Surveillance rigoureuse de la caisse pour assurer la sécurité des transactions.</li>
+                                  <li>Accueil chaleureux des clients et assistance pour répondre à leurs besoins.</li>
+     
+                                <p><strong>Réalisations :</strong></p>
+
+                                  <li>Exécution efficace des transactions financières avec une grande attention aux détails.</li>
+                                  <li>Maintien d'un environnement de caisse sécurisé et organisé.</li>
+                                  <li>Établissement de relations positives avec les clients grâce à un service amical et attentif.</li>
+
+                              </section>
+                        </p>
+                    </div>
+                
+                </article>
+               </div>
+        </section>
+
+        <!-- ==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+           <div class="contact__container grid">
+            <div class="contact__data">
+                <h2 class="section__title-2 h2__contact">
+                    <span>Contactez Moi</span>
+                </h2>
+                <p class="contact__description-1">
+                    Je vais lire tous vos emails. Vous pouvez m'envoyer n'importe quel message, et je vous ferai un retour le plus tôt possible.
+                </p>
+                <p class="contact__description-2">
+                    J'ai besoin de votre <b>Nom</b> et <b>adresse email</b>. Ne vous inquiétez pas, vous recevrez seulement la réponse à votre message.
+                </p>
+                <div class="geometric-box"></div>
+            </div>
+            <div class="contact__mail">
+                <h2 class="contact__title">
+                    Envoyez moi un message
+                </h2>
+                <form action="" class="contact__form" id="contact-form" autocomplete="on">
+                    <div class="contact__group">
+                        <div class="contact__box">
+                           <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Nom">
+                           <label for="name" class="contact__label">
+                            Nom
+                           </label>
+                        </div>
+
+                        <div class="contact__box">
+                            <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Addresse Mail">
+                            <label for="email" class="contact__label">
+                            Addresse Mail
+                            </label>
+                         </div>
+
+                    </div>
+                    
+                    <div class="contact__box">
+                        <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Objet">
+                        <label for="subject" class="contact__label">
+                        Objet
+                        </label>
+                     </div>
+
+                     <div class="contact__box contact__area">
+                        <textarea name="user__message" id="message" class="contact__input" required placeholder="Message">
+                            
+                        </textarea>
+                        <label for="message" class="contact__label">
+                            Message
+                        </label>
+                     </div>
+                     <p class="contact__message" id="contact-message"></p>
+                     <button type="submit" class="contact__button button">
+                        <i class="ri-send-plane-line"></i>Envoyez
+                     </button>
+                </form>
+            </div>
+            <div class="contact__social">
+                <img src="/images/curved-arrow.svg" alt="" class="contact__social-arrow">
+                <div class="contact__social-data">
+                    <div>
+                        <p class="contact__social-description-1">
+                          N'envoyez pas de mails  
+                        </p>
+                        <p class="contact__social-description-2 pcontact__social-description-2">
+                            Contactez moi sur mes réseaux
+                        </p>
+                    </div>
+                    <div class="contact__social-links">
+                        <a href="#" target="_blank" class="contact__social-link">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+     </main>
+    <%- include('partials/scripts') %>
+    <script src="/views/partials/scrollreveal.min.js"></script>
+</body>
+    <%- include('partials/footer') %>
+</html>
