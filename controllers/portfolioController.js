@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 
 const portfolio = catchAsync(async(req, res) => {
-    res.render('portfolio', {
+    res.render('index', {
         title: 'Portfolio',
    }); 
  });
